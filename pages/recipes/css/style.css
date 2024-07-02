@@ -1,0 +1,22 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+}
+ul
+{
+    list-style: none;
+    border: 2px solid purple;
+    display: flex;
+    padding: 20px;
+    justify-content: space-evenly;
+}
+.recepie-card
+{
+    display: inline-block;
+    border: 2px solid purple;
+    padding: 30px 10px 100px;
+}
