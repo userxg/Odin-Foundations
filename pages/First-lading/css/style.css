@@ -159,3 +159,21 @@ button.sing-up:hover{
     background-color: #E5E7EB;
 }
 
+.quote{
+    background-color: #E5E7EB;
+    padding: 6rem 12rem;
+}
+
+.quote .quote-text{
+    font-size: 36px;
+    font-weight: 100;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.quote .author{
+    color: #1F2937;
+    font-weight: 900;
+    text-align: right;
+    margin-right: 2rem;
+}
