@@ -179,3 +179,51 @@ button.sing-up:hover{
     text-align: right;
     margin-right: 2rem;
 }
+
+.sing-up-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 8rem;
+}
+
+.sing-up-content{
+    background-color: #bd38f6;
+    border-radius: 0.375rem;
+    flex: 1;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5rem;
+}
+
+.sing-up-section button.sing-up{
+    background-color: #bd38f6;
+    border: 2px solid #F9FAF8;
+    flex: 0 0 auto;
+}
+
+.sing-up-section button.sing-up:hover{
+    background-color: #a22fd4;
+    border: 2px solid #e4e5e4;
+    flex: 0 0 auto;
+}
+
+.sing-up-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.rem;
+    color: #F9FAF8;
+}
+
+.sing-up-info h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.sing-up-info p{
+    font-size: 0.875rem;
+    color: #eaeaea;
+}
