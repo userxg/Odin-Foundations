@@ -227,3 +227,10 @@ button.sing-up:hover{
     font-size: 0.875rem;
     color: #eaeaea;
 }
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
