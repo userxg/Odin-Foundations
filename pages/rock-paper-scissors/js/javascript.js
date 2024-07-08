@@ -11,7 +11,6 @@ function playGame() {
     for (let i = 0; i < 5; ++i){
         console.log(playRound(getHumanChoice(), getComputerChoice()));
     }
-    
     if (humanScore > computerScore) {
             console.log('You won the game!!');
     }else if(humanScore < computerScore) {
@@ -29,21 +28,22 @@ function playGame() {
 
 
 function playRound(humanChoice, computerChoice) {
-    if (humanChoice === undefined) {
+    if (humanChoice === undefined || humanChoice != 'rock' && humanChoice != 'paper'
+        && humanChoice != 'scissors') {
         return 'wrong choice';
     } else {
         if (humanChoice === computerChoice) {
-            console.log(`Draw! :-|`);
+            return `Draw! :-|`;
         }else if (humanChoice === 'rock' && computerChoice === 'paper'
             || humanChoice === 'scissors' && computerChoice === 'rock'
             || humanChoice === 'paper' && computerChoice === 'scissors') {
             ++computerScore;
             --humanScore;
-            console.log(`You lose! ${computerChoice} beats ${humanChoice} ;-)`);
+            return `You lose! ${computerChoice} beats ${humanChoice} ;-)`;
         } else {
             --computerScore;
             ++humanScore;
-            console.log(`You win! ${computerChoice} beats ${humanChoice} :-)`);
+            return `You win! ${humanChoice} beats ${computerChoice} :-)`;
         }
     }
 }
