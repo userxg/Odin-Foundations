@@ -1,0 +1,67 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    font-family:  Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('../img/white-clouds.jpg') ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 120%;
+}
+
+
+.keys{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    gap: 2rem;
+    min-height: 85vh;
+}
+
+.key > kbd{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.key{
+    margin-top: 100px;
+    height: 250px;
+    width: 250px;
+    background-color: rgba(88, 48, 161, 0.178);
+    border-radius: 1rem;
+    border: 1px solid #660085b2;
+    color: aliceblue;
+    font-size: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    transition: all 1s;
+}
+
+.sound{
+    color: rgb(170, 13, 243);
+    font-weight: 400;
+}
+
+audio{
+    display: block;
+    margin: 0px auto ;
+}
+
+.playing{
+    transform:scale(1.15);
+    border-color: #6500a886;
+    box-shadow: 0 0 1rem #6500a8b2;
+    background-color: rgba(87, 48, 161, 0.349);
+
+}

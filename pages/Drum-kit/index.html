@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/javascript.js" defer></script>
+    <title>Drum kit</title>
+  </head>
+  <body>
+    <div class="keys">
+      <div data-key="65" class="key">
+        <kbd>A</kbd>
+        <span class="sound">Antarctica</span>
+      </div>
+
+      <div data-key="83" class="key">
+        <kbd>S</kbd>
+        <span class="sound">Fiji</span>
+    </div>
+
+      <div data-key="68" class="key">
+        <kbd>D</kbd>
+        <span class="sound">Aj Beat</span>
+      </div>
+
+      <div data-key="70" class="key">
+        <kbd>F</kbd>
+        <span class="sound">No Sleep</span>
+      </div>
+    </div>
+
+    <audio data-key="65" src="./sounds/Antarctica.mp3"></audio>
+    <audio data-key="83" src="./sounds/Fiji.mp3"></audio>
+    <audio data-key="68" src="./sounds/Aj-beat.mp3"></audio>
+    <audio data-key="70" src="./sounds/No-sleep.mp3"></audio>
+    
+    
+  </body>
+</html>
