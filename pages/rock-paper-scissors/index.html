@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script src="./js/javascript.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/javascript.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1>ROCK PAPER SCISSORS</h1>
+    </header>
+
+    <main class="main">
+      <div class="round">Round <span class="round-number">0</span></div>
+      
+      </div>
+
+      <div class="image-container">
+        <div class="users-fist shaking">
+            <img src="./img/fist.png" width="325px" height="325px" alt="image of fist or users choice" />
+        </div>
+        <div class="score-container">
+            <div>score</div>
+            <div>
+                
+                <div class="user-score">0</div>
+                <div class="ai-score">0</div>
+            </div>
+            <div class="win-message">you lost</div>
+        </div>
+        <div class="ais-fist">
+            <img src="./img/fist.png" width="325px" height="325px" alt="image of fist or ai choice" />
+        </div>
+      </div>
+
+      <div class="choice-container">
+        <button class="btn" id="Rock">Rock</button>
+        <button class="btn" id="Paper">Paper</button>
+        <button class="btn" id="Scissors">Scissors</button>
+      </div>
+
+      <button class="play-round">play round</button>
+    </main>
+    <footer class="footer">
+        <a href="../../index.html">portfolio</a>
+    </footer>
+  </body>
 </html>

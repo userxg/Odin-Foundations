@@ -1,0 +1,130 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+a{
+    color: initial;
+}
+
+body{
+    background-color: rgb(230, 228, 231);
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.footer,
+.header,
+.round{
+    text-align: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    color: rgb(236, 236, 236);
+    background-color: black;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.round{
+    padding: 1rem;
+    font-size: 3rem;
+}
+
+.image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.score-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    gap: 2rem;
+}
+.win-message{
+    width: 300px;
+    flex:1 0 auto;
+}
+.score-container > div{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5rem;
+}
+
+img{
+    transition: transform 0.7s;
+}
+
+.ais-fist{
+    transform: scaleX(-1);
+}
+
+.shaking{
+    transform: rotate(45deg);
+}
+
+.choice-container{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+    margin-bottom: 1rem;
+}
+
+.choice-container > button{
+    width: 120px;
+    text-align: center;
+    flex: 0 1 auto;
+}
+
+button{
+    padding: 0.7rem 2rem;
+    border-radius: 0.7rem;
+    box-shadow: 0px 0px 10px white;
+    transition: all 0.1s;
+}
+
+.play-round{
+    width: 426px;
+    flex: 0 1 auto;
+    margin-bottom: 1rem;
+}
+
+button:hover{
+    transform: scale(1.02);
+}
+
+button:active{
+    transform: scale(1.03);
+    background-color: rgb(209, 209, 209);
+}
+
+footer{
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: black;
+}
+
+footer > a{
+    color: rgb(236, 236, 236);
+    
+}
