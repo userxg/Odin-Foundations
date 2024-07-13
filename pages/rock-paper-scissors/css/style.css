@@ -67,18 +67,18 @@ header{
     gap: 5rem;
 }
 
-img{
-    transition: transform 0.7s;
+.fist-transform{
+    transition: transform 20s;
 }
 
 .ais-fist{
     transform: scaleX(-1);
 }
 
-.shaking{
-    transform: rotate(45deg);
-}
 
+.shaking{
+    transform: rotate(10000deg);
+}
 .choice-container{
     display: flex;
     justify-content: center;
@@ -100,7 +100,7 @@ button{
     transition: all 0.1s;
 }
 
-.play-round{
+#play-round{
     width: 426px;
     flex: 0 1 auto;
     margin-bottom: 1rem;
