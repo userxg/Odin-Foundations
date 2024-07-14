@@ -1,17 +1,16 @@
 const cellSizeBar = document.querySelector('#cell-size');
-console.log(cellSizeBar.value);
 const cellColorBar = document.querySelector('#cell-color');
 let cellColor = cellColorBar.value;
-console.log(cellColor);
+let isDrawing = false;
 const gridContainer = document.querySelector('.grid-container');
 gridContainer.setAttribute('style', 'width: 502px; height: 502px;');
 const GRID_CONTAINER_SIZE = parseInt(gridContainer.style.height) - 2;
-console.log(GRID_CONTAINER_SIZE);
 const DIVISORS_Of_500 = [4, 5, 10, 20, 25, 50, 100, 125, 250, 500];
-                    //  0   10  20  30 40  50  60   70   80   90
-                    //  0   1   2   3   4  5     6   7   8     9
-fillGrid(cellSizeBar.value);
 
+
+
+
+fillGrid(cellSizeBar.value);
 
 cellSizeBar.addEventListener('input', () => {
     
@@ -23,14 +22,39 @@ cellColorBar.addEventListener('input', () => {
     cellColor = cellColorBar.value;
 })
 
-// gridContainer.addEventListener('mousedown', () => {
-//     gridContainer.addEventListener('mouseover', e => {
-//         console.log(e.target);
-//         e.target.style.backgroundColor = cellColor;
-//     })
-    
-// })
+gridContainer.addEventListener('mousedown', startDrawing);
 
+
+gridContainer.addEventListener('mouseover', draw);
+
+document.addEventListener('mouseup', stopDrawing);
+
+
+function startDrawing(e) {
+    e.preventDefault();
+    console.log('startDrawing');
+    console.log(e.target);
+    console.log(gridContainer);
+    isDrawing = true;
+    if (e.target !== gridContainer)
+        draw(e);
+}
+
+function stopDrawing(e) {
+    console.log('stopDrawing');
+    e.preventDefault();
+    isDrawing = false;
+}
+
+
+function draw(e) {
+    e.preventDefault();
+    if (!isDrawing) return;
+    
+    console.log('draw');
+    if (e.target !== gridContainer)
+        e.target.style.backgroundColor = cellColor;
+}
 
 function fillGrid(cellSize) {
     
@@ -55,14 +79,3 @@ function roundCellSize(cellSize) {
     return cellSize;
 }
 
-
-
-
-/*
-
-
-3.make cells colorable
-
-
-sdfsdf
-*/
