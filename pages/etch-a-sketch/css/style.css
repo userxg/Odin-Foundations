@@ -1,0 +1,87 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    color: initial;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+
+
+
+header{
+    color: rgb(53, 53, 53);
+    font-size: 1.3rem;
+    padding-top: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.manage-panel > form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.625rem 2.5rem;
+}
+
+form > div{
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    font-size: 1.5rem;
+}
+
+.grid-container{
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 10px 10px 0.75rem rgba(0, 0, 0, 0.562);
+}
+
+.cell{
+    width: 50px;
+    height: 50px;
+    border: 0.5px solid black;
+}
+
+
+
+#cell-size::-webkit-scrollbar-thumb  {
+  background-color: #3c2bf7;
+}
+
+footer{
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    text-shadow: 0px 0px 0.6rem black;
+}
+
+footer > a{
+    color: rgb(81, 81, 81);
+    font-size: 1.125rem;
+}
+
+
+#cell-size{
+  accent-color: rgb(76, 76, 76);
+}
