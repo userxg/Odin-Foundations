@@ -36,7 +36,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.625rem 2.5rem;
+    padding: 0.625rem 2rem;
 }
 
 form > div{
@@ -53,11 +53,14 @@ form > div{
     border-radius: 0.75rem;
     overflow: hidden;
     box-shadow: 10px 10px 0.75rem rgba(0, 0, 0, 0.562);
+
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .cell{
-    width: 50px;
-    height: 50px;
+    width: 20px;
+    height: 20px;
     border: 0.5px solid black;
 }
 
@@ -84,4 +87,8 @@ footer > a{
 
 #cell-size{
   accent-color: rgb(76, 76, 76);
+}
+
+input[type="range"] {
+  width: 250px;
 }
