@@ -52,6 +52,7 @@ header{
     padding: 1.125rem 8rem;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 header .logo a{
@@ -233,4 +234,5 @@ footer{
     justify-content: center;
     align-items: center;
     padding: 2rem;
+
 }

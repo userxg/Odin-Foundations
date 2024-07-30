@@ -1,0 +1,253 @@
+
+@font-face {
+    font-family: 'norsebold';
+    src: url('../fonts/norse-bold-webfont.woff2') format('woff2'),
+         url('../fonts/norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppinsregular';
+    src: url('../fonts/poppins-regular-webfont.woff2') format('woff2'),
+         url('../fonts/norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+body{
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  --left-content-width: 30%;
+  
+
+  background-color: #e7e7e7e7;
+  font-family: 'poppinsregular', sans-serif;
+  font-size: 1rem;
+}
+
+body > .left-content {
+  width: var(--left-content-width);
+  height: 100vh;
+  background-image: url(../img/purple-sunrise.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -500px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.logo-container{
+  height: 130px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.538);
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+}
+
+.odin-logo{
+  height: 90%;
+}
+
+.logo-name{
+  font-family: 'norsebold', sans-serif;
+  font-size: 6rem;
+}
+
+.odin-logo > img{
+ height: 100%;
+}
+
+.destribution{
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #d7d7d7;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+.destribution > a{
+  text-decoration: underline;
+}
+
+
+.right-content{
+  max-width: calc(100% - var(--left-content-width));
+  display: flex;
+  flex-direction: column;
+  margin-top: 55px;
+}
+
+.form-header{
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 1rem;
+  margin: 0rem 4rem 0rem 2rem;
+}
+
+.form-header p:first-of-type{
+  margin-bottom: 1rem;
+}
+.form-header p:nth-of-type(2){
+  margin-bottom: 0rem; 
+  font-size: 1.3rem;
+}
+
+
+.form{
+  position: relative;
+  padding: 1.25rem 2rem 2rem 2rem;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  background-color: white;
+  border: none;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.342);
+}
+
+.form > legend{
+  position: absolute;
+  visibility: hidden;
+
+}
+
+.input-boxes{
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.input-box{
+  display: flex;
+  flex-direction: column;
+  width: calc(100%/2 - 20px);
+  margin-bottom: 10px;
+  position: relative;
+}
+.input-box > label{
+  line-height: 1.7rem;
+  width: 100%;
+  white-space: nowrap;
+
+}
+
+.input-box > input{
+  outline: none;
+  border: 1px solid #ccc;
+  height: 40px;
+  padding: 8px;
+  width: 100%;
+  border-radius: 10px;
+  padding-left: 10px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+
+.input-box > input:focus{
+  border-bottom: 3px solid #60486d;;
+  box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.493);
+
+}
+
+
+.input-box .error-input {
+  border-bottom: 3px solid rgb(220, 43, 43);
+  background-color: #f9b4b417;
+}
+
+.input-box .success-input{
+  border-bottom: 3px solid rgb(167, 220, 43);
+}
+
+
+.input-box .error{
+  color: rgb(224, 55, 55);
+  font-size: 0.875rem;
+  position: absolute;
+  bottom: -25px;
+  left: 1rem;
+  white-space: nowrap;
+}
+
+
+button{
+  border-radius: 10px;
+  padding: 0.5rem 1.5rem;
+  background-color: #60486d;
+  color: white;
+  font-weight: bold;
+  border: none;
+  transition: all 0.04s;
+}
+
+button:hover{
+  background-color: #483652;
+  transform: scale(1.03);
+}
+
+.confirm-container{
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+.confirm-container > button{
+  margin-bottom: 1rem;
+}
+.confirm-container .text{
+  color: #333;
+}
+.confirm-container .text a{
+  color: #60486d;
+  font-weight: bold;
+}
